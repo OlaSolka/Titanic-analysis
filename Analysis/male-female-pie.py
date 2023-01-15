@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis\Train.csv")
+df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis/train.csv")
 
 explode = (0.05, 0.05)
 colors = ["steelblue", "pink"]
