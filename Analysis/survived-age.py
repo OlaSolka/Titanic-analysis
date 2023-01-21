@@ -1,6 +1,8 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
 
 df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis/train.csv")
 

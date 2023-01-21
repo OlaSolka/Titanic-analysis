@@ -1,20 +1,24 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
+class Graphs:
 
-class Statistics:
     def __init__(self):
         df = pd.read_csv(
             r"https://github.com/OlaSolka/Titanic-analysis/blob/c2a442ebab23aecd292f4e3985da63a51efbafb2/train.csv")
         print(df)
 
-    def gendersplit(self):
+    def histogramage(self):
         df = pd.read_csv(
             r"https://github.com/OlaSolka/Titanic-analysis/blob/c2a442ebab23aecd292f4e3985da63a51efbafb2/train.csv")
-        return df.Sex.value_counts()
+        df['Age'].plot(kind='hist', bins=20, color='grey')
+        plt.show()
 
-    def isnull(self):
-        df = pd.read_csv(
+    def gendersplit(self, df):
+        self.df = pd.read_csv(
             r"https://github.com/OlaSolka/Titanic-analysis/blob/c2a442ebab23aecd292f4e3985da63a51efbafb2/train.csv")
-        return df.isnull().sum()
-
+        explode = (0.05, 0.05)
+        colors = ["steelblue", "pink"]
+        df.Sex.value_counts().plot(kind='pie', y='Sex', autopct='%1.0f%%', colors=colors, explode=explode)
+        plt.show()
 
