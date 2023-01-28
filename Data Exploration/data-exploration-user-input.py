@@ -17,7 +17,6 @@ while should_continue:
     df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis\train.csv")
 
     choice = int(input("What do you want to generate? Type '1' for graph or '2' for numbers\n"))
-
     choice2 = int(
         input("What do you want to do? Type corresponding number.\n 1. Woman/man split\n 2. Survived/not survived"
               "\n 3. Gender against survival rate\n 4. Age groups against survival\n "
