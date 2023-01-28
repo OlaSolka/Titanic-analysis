@@ -1,4 +1,4 @@
-import seaborn as sns
+import seaborn as sbn
 import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
@@ -11,7 +11,7 @@ df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis/train.csv")
 df.loc[:, "Survived"][df.Survived == 0] = "no"
 df.loc[:, "Survived"][df.Survived == 1] = "yes"
 
-sns.catplot(data=df, x='Pclass', kind='count', hue='Survived')
+sbn.catplot(data=df, x='Pclass', kind='count', hue='Survived')
 plt.show()
 
 # There is clear correlation between ticket class and survival. Clearly, wealthier people were treated better or were
