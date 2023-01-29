@@ -6,6 +6,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class Choices:
+    """Class that includes two choices. User can pick either graphs - 1 or statistics - 2.
+    Depending on the choice you can use different method"""
 
     df = pd.read_csv(
             r"C:\Users\solka\PycharmProjects\Titanic-Analysis\train.csv", on_bad_lines='skip')
@@ -14,6 +16,9 @@ class Choices:
         self.df = df
 
     def choice2(self):
+        """If user picked graphs this functions shows a list of choices.
+        User can choose what data they want to see in the form of chart."""
+
         df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis\train.csv")
         choice2 = int(
             input("What do you want to do? Type corresponding number.\n 1. Woman/man split\n 2. Survived/not survived"
@@ -58,6 +63,9 @@ class Choices:
 
 
     def choice3(self):
+        """If user picked graphs this functions shows a list of choices.
+                User can choose what data they want to see in the form of chart."""
+
         df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis\train.csv")
         choice3 = int(
             input("What do you want to do? Type corresponding number.\n 1. Woman/man split\n 2. Survived/not survived"
