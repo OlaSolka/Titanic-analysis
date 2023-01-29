@@ -1,4 +1,4 @@
-import seaborn as sns
+import seaborn as sbn
 import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
@@ -11,7 +11,7 @@ df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis/train.csv")
 df.loc[:, "Survived"][df.Survived == 0] = "no"
 df.loc[:, "Survived"][df.Survived == 1] = "yes"
 
-sns.displot(data=df, x=df['Age'], hue=df['Sex'], col=df['Survived'])
+sbn.displot(data=df, x=df['Age'], hue=df['Sex'], col=df['Survived'])
 plt.show()
 
 # First of all, we can see that men on the ship were much older than women. Also in almost every Age group more woman

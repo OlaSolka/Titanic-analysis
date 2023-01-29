@@ -1,4 +1,4 @@
-import seaborn as sns
+import seaborn as sbn
 import matplotlib.pyplot as plt
 import pandas as pd
 import warnings
@@ -13,7 +13,7 @@ df.loc[:, "Survived"][df.Survived == 1] = "yes"
 
 print(df.Survived.value_counts())
 
-sns.catplot(data=df, x='Survived', kind='count')
+sbn.catplot(data=df, x='Survived', kind='count')
 plt.show()
 
 # As we can see from this short analysis, the majority of passengers didn't survive the catastrophe. Actually
