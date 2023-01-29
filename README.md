@@ -7,4 +7,6 @@ In second section you'll find a simple app for exploring this big database. I in
 
 I'll make sure to work some more on the code in the future to make it more complex.
 
+disclaimer: I put my own file path, so it only works locally on my computer. 
+
 :)
