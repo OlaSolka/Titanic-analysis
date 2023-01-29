@@ -17,7 +17,7 @@ class Choices:
 
     def choice2(self):
         """If user picked graphs this functions shows a list of choices.
-        User can choose what data they want to see in the form of chart."""
+        User can choose what data they want to see in the form of chart. """
 
         df = pd.read_csv(r"C:\Users\solka\PycharmProjects\Titanic-Analysis\train.csv")
         choice2 = int(
